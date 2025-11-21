@@ -20,7 +20,7 @@ export class Payment {
   @Column({ type: 'float' })
   amount: number;
 
-  @Column({ type: 'enum', enum: Currency })
+  @Column({ type: 'varchar' })
   currency: Currency;
 
   @Column({ type: 'timestamptz' })
