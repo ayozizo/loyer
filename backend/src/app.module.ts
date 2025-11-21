@@ -7,6 +7,13 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { ClientsModule } from './clients/clients.module';
 import { CasesModule } from './cases/cases.module';
+import { DocumentsModule } from './documents/documents.module';
+import { BillingModule } from './billing/billing.module';
+import { CalendarModule } from './calendar/calendar.module';
+import { TasksModule } from './tasks/tasks.module';
+import { ReportsModule } from './reports/reports.module';
+import { NotificationsModule } from './notifications/notifications.module';
+import { AiModule } from './ai/ai.module';
 
 @Module({
   imports: [
@@ -27,6 +34,13 @@ import { CasesModule } from './cases/cases.module';
     AuthModule,
     ClientsModule,
     CasesModule,
+    DocumentsModule,
+    BillingModule,
+    CalendarModule,
+    TasksModule,
+    ReportsModule,
+    NotificationsModule,
+    AiModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -86,27 +86,70 @@ export default function DashboardPage() {
               لوحة القضايا - قيد
             </h1>
             <p className="text-sm text-slate-600">
-              رؤية سريعة لحالة القضايا والعملاء في مكتب المحاماة
+              رؤية سريعة لحالة القضايا، العملاء، المستندات، والمالية في مكتب
+              المحاماة
             </p>
           </div>
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2 justify-end">
             <button
               onClick={() => router.push("/cases")}
-              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
             >
-              إدارة القضايا
+              القضايا
             </button>
             <button
               onClick={() => router.push("/clients")}
-              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
             >
-              إدارة العملاء
+              العملاء
+            </button>
+            <button
+              onClick={() => router.push("/documents")}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
+            >
+              المستندات
+            </button>
+            <button
+              onClick={() => router.push("/billing")}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
+            >
+              الأتعاب والفواتير
+            </button>
+            <button
+              onClick={() => router.push("/calendar")}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
+            >
+              التقويم
+            </button>
+            <button
+              onClick={() => router.push("/tasks")}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
+            >
+              المهام
+            </button>
+            <button
+              onClick={() => router.push("/reports")}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
+            >
+              التقارير
+            </button>
+            <button
+              onClick={() => router.push("/ai-assistant")}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
+            >
+              المساعد القانوني
+            </button>
+            <button
+              onClick={() => router.push("/notifications")}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
+            >
+              الإشعارات
             </button>
             <button
               onClick={handleLogout}
-              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs sm:text-sm text-slate-700 hover:bg-slate-50"
             >
-              تسجيل الخروج
+              خروج
             </button>
           </div>
         </header>
