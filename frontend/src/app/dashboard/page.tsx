@@ -80,7 +80,7 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-slate-100 px-4 py-6">
       <div className="mx-auto max-w-6xl space-y-6">
-        <header className="flex items-center justify-between">
+        <header className="flex items-center justify-between gap-4">
           <div className="space-y-1 text-right">
             <h1 className="text-xl font-semibold text-slate-900">
               لوحة القضايا - قيد
@@ -89,12 +89,26 @@ export default function DashboardPage() {
               رؤية سريعة لحالة القضايا والعملاء في مكتب المحاماة
             </p>
           </div>
-          <button
-            onClick={handleLogout}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
-          >
-            تسجيل الخروج
-          </button>
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              onClick={() => router.push("/cases")}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+            >
+              إدارة القضايا
+            </button>
+            <button
+              onClick={() => router.push("/clients")}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+            >
+              إدارة العملاء
+            </button>
+            <button
+              onClick={handleLogout}
+              className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+            >
+              تسجيل الخروج
+            </button>
+          </div>
         </header>
 
         {loading && (
